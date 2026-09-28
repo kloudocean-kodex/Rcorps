@@ -52,7 +52,7 @@ await fs.writeFile(out+'/404.html',layout('Page not found','Find the service or 
 if(production){
   await fs.rm(out+'/review/index.html',{force:true});
   await fs.writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+publishedRoutes.map(route=>`<url><loc>${business.productionOrigin}${route}</loc></url>`).join('')+'</urlset>\n');
-  await fs.writeFile(out+'/_redirects',`https://www.rcorpssecurity.com/* ${business.productionOrigin}/:splat 301\n`);
+  await fs.rm(out+'/_redirects',{force:true});
 }else{
   await fs.rm(out+'/sitemap.xml',{force:true});
   await fs.rm(out+'/_redirects',{force:true});
