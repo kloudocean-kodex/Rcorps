@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import { business } from '../content/business.mjs';
+const production=Boolean(business.productionOrigin)&&(!process.env.CF_PAGES_BRANCH||process.env.CF_PAGES_BRANCH==='main');
 const root = path.resolve('dist');
 const documents = new Map();
 const files = [];
@@ -20,7 +22,10 @@ await walk(root);
 for (const [full, html] of documents) {
   const route = '/' + path.relative(root, full).replaceAll('\\', '/').replace(/index\.html$/, '');
   if ((html.match(/<h1[ >]/g) || []).length !== 1) failures.push(`${route}: H1 count`);
-  if (!html.includes('noindex,nofollow')) failures.push(`${route}: preview indexing`);
+  const indexing=production && !full.endsWith('404.html')?'index,follow':'noindex,nofollow';
+  if (!html.includes(`content="${indexing}"`)) failures.push(`${route}: indexing policy`);
+  if(production && !full.endsWith('404.html') && !html.includes(`<link rel="canonical" href="${business.productionOrigin}${route}">`)) failures.push(`${route}: canonical URL`);
+  if(production && /DESIGN PREVIEW|href="\/review\/"/.test(html)) failures.push(`${route}: preview interface in public build`);
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const href = match[1];
     if (!href.startsWith('/') && !href.startsWith('#')) continue;
@@ -51,7 +56,17 @@ for (const full of files) {
     for (const match of css.matchAll(/url\([\s"']*([^\s)"']+)/g)) await checkAsset(match[1], relative);
   }
 }
-assert.equal(documents.size, 17, 'Expected 16 routes and custom 404');
-assert.match(await fs.readFile(path.join(root, '_headers'), 'utf8'), /X-Robots-Tag: noindex, nofollow/);
+assert.equal(documents.size, production?16:17, 'Expected public routes and custom 404');
+const headers=await fs.readFile(path.join(root, '_headers'), 'utf8');
+assert.match(headers, /X-Robots-Tag: noindex, nofollow/);
+if(production){
+  assert.doesNotMatch(headers, /^\/\*\n  X-Robots-Tag: noindex/);
+  assert.match(headers, /https:\/\/rcorps.pages.dev\/\*\n  X-Robots-Tag: noindex/);
+  assert.match(await fs.readFile(path.join(root,'robots.txt'),'utf8'), /Allow: \/\n/);
+  const sitemap=await fs.readFile(path.join(root,'sitemap.xml'),'utf8');
+  assert.equal((sitemap.match(/<loc>/g)||[]).length,15);
+  assert.ok(sitemap.includes(business.productionOrigin+'/services/escort-vehicle/'));
+  assert.ok(!sitemap.includes('/review/'));
+}
 assert.equal(failures.length, 0, failures.join('\n'));
-console.log(JSON.stringify({ htmlDocuments: documents.size, localReferences: references, brokenReferences: 0, previewIndexing: 'noindex on all', unsupportedCopyScan: 'pass' }, null, 2));
+console.log(JSON.stringify({ htmlDocuments: documents.size, localReferences: references, brokenReferences: 0, indexing: production?'public domain indexable; Pages host noindex; 404 noindex':'noindex on all', unsupportedCopyScan: 'pass' }, null, 2));

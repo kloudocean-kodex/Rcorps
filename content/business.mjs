@@ -13,5 +13,5 @@ export const business = Object.freeze({
  instagramEvidenceStatus:'Profile inspected; legal suffix LTD conflicts with supplied LLP documents. Global coverage claim not adopted.',
  whatsappHandoffEnabled:true,
  serverEnquiriesEnabled:false,
- productionOrigin:null
+ productionOrigin:'https://rcorpssecurity.com'
 });
