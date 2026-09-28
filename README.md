@@ -37,6 +37,8 @@ Official references: [build configuration](https://developers.cloudflare.com/pag
 - `content/home-v3.mjs`: homepage story and markup.
 - `content/business.mjs`: business information and its evidence status.
 - `content/clients.json`: supplied client-logo provenance.
+- `content/reviews.mjs`: short, attributed Google review excerpts and their direct source links, checked 28 September 2026. This is a curated snapshot, not an API-fed live widget.
+- `public/reviews.css` and `public/reviews.js`: responsive review cards with manual navigation, keyboard support and native touch scrolling. Reduced-motion preferences are respected.
 - `scripts/build-site.mjs`: page templates, services, privacy and review notes.
 - `public/`: selected optimized media, local fonts, CSS and JavaScript.
 - `dist/`: generated deployment output, excluded from Git.
