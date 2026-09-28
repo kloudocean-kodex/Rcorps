@@ -2,6 +2,8 @@
 
 Version 03 of the R CORPS Security Services design preview. Static HTML, CSS and JavaScript, generated with Node.js. No application dependencies, external fonts or client-side frameworks are required.
 
+Hosted preview: **https://rcorps.pages.dev/**. The GitHub-connected Cloudflare Pages project was created on 28 September 2026. The initial hosted build passed all 14 HTML-document checks and 614 local-reference checks. All 67 public resources returned HTTP 200; QA/source paths and a missing page returned the expected HTTP 404. The hosted preview retains its noindex headers and demo enquiry behaviour.
+
 ## Run locally
 
 ```sh
