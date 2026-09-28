@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env*
+!.env.example
+*.pdf
+*.zip
+*.jpg
+*.jpeg
+audit/
+__*

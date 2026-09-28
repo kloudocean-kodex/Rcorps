@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "waaree",
+    "name": "Waaree",
+    "src": "/assets/clients/waaree.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      60,
+      148,
+      190,
+      204
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "ashshree",
+    "name": "Ashshree Infrabuild",
+    "src": "/assets/clients/ashshree.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      235,
+      142,
+      337,
+      208
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "vishwaraj",
+    "name": "VishwaRaj Hospital",
+    "src": "/assets/clients/vishwaraj.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      377,
+      146,
+      527,
+      205
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "amanora",
+    "name": "Amanora Park Town",
+    "src": "/assets/clients/amanora.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      70,
+      225,
+      165,
+      316
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "jspm",
+    "name": "JSPM University",
+    "src": "/assets/clients/jspm.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      250,
+      218,
+      325,
+      311
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "narrative",
+    "name": "Narrative",
+    "src": "/assets/clients/narrative.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      374,
+      246,
+      533,
+      296
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "yash",
+    "name": "Yash Hospital",
+    "src": "/assets/clients/yash.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      50,
+      335,
+      197,
+      432
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "mit-adt",
+    "name": "MIT-ADT University",
+    "src": "/assets/clients/mit-adt.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      235,
+      343,
+      352,
+      412
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "magarpatta",
+    "name": "Magarpatta City",
+    "src": "/assets/clients/magarpatta.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      392,
+      343,
+      525,
+      419
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "seasons",
+    "name": "Seasons",
+    "src": "/assets/clients/seasons.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      78,
+      482,
+      150,
+      564
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "sky-gold",
+    "name": "Sky Gold",
+    "src": "/assets/clients/sky-gold.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      250,
+      485,
+      326,
+      560
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "amanora-fern",
+    "name": "Amanora The Fern Pune",
+    "src": "/assets/clients/amanora-fern.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      379,
+      488,
+      522,
+      564
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "super-bazzar",
+    "name": "Super Bazzar",
+    "src": "/assets/clients/super-bazzar.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      57,
+      617,
+      181,
+      686
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "prahar",
+    "name": "Prahar Premier League",
+    "src": "/assets/clients/prahar.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      235,
+      616,
+      334,
+      686
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  },
+  {
+    "slug": "rucha",
+    "name": "Rucha Group",
+    "src": "/assets/clients/rucha.png",
+    "source": "R CORPS Security Services.pdf",
+    "page": 9,
+    "source_heading": "Our Client",
+    "clip_points": [
+      391,
+      609,
+      520,
+      688
+    ],
+    "relationship": "Client as listed by supplied company profile",
+    "independently_verified": false,
+    "public_launch_permission": "To confirm with owner",
+    "extraction": "Exact PDF page region, no AI recreation or brand modification"
+  }
+]
