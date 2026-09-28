@@ -1,4 +1,5 @@
 import { teamPicture, personnelSection, vehicleSection } from './personnel.mjs';
+import { instagramStory } from './social.mjs';
 export function createHome({picture, button, arrow, services, faqs, googleProof, clients}) {
   const scene=(name,alt,cls='',eager=false)=>`<picture class="${cls}"><source srcset="/assets/v3/${name}-640.webp 640w, /assets/v3/${name}-1200.webp 1200w, /assets/v3/${name}-1800.webp 1800w" sizes="(max-width: 700px) 100vw, 55vw" type="image/webp"><img src="/assets/v3/${name}-1200.webp" alt="${alt}" width="1200" height="800" loading="${eager?'eager':'lazy'}" decoding="async"></picture>`;
   const mark=c=>`<li class="client-mark"><img src="${c.src}" alt="${c.name}" width="180" height="100" loading="lazy" decoding="async"></li>`;
@@ -46,7 +47,7 @@ export function createHome({picture, button, arrow, services, faqs, googleProof,
     <figure class="journal-wide">${teamPicture('escort','R CORPS personnel accompanying guests through an indoor arrival area')}<figcaption><span>01 / THE ARRIVAL</span><h3>Make every arrival considered.</h3></figcaption></figure>
     <figure class="journal-portrait">${teamPicture('officer','Client-supplied personal security personnel photograph in a grey uniform')}<figcaption><span>02 / THE CONNECTION</span><h3>Keep people in the picture.</h3></figcaption></figure>
     <figure class="journal-final">${teamPicture('team','Three R CORPS security professionals in a lobby')}<figcaption><span>03 / THE PRESENCE</span><h3>Be part of the plan.</h3></figcaption></figure>
-    </div><div class="journal-close"><span>Real people. Real surroundings. R CORPS.</span><a class="text-link" href="/services/event-security/">Explore event security ${arrow}</a></div></div></section>
+    </div>${instagramStory()}</div></section>
 
   <section class="planning-section shell"><div><p class="eyebrow">04 / THE NEXT CHAPTER</p><h2>From a first conversation<br><em>to a clear requirement.</em></h2><p>You don’t need to know every detail.<br>Start with the place and what matters to you.</p>${button('Start your enquiry','/get-a-quote/')}</div><ol class="planning-list"><li><span>01</span><div><h3>Tell us about your world.</h3><p>The location, service, timing and people involved.</p></div></li><li><span>02</span><div><h3>Shape the scope together.</h3><p>Personnel, posts, duties and practical expectations.</p></div></li><li><span>03</span><div><h3>See the commercial picture.</h3><p>A quotation with the service period, rates, applicable taxes and terms.</p></div></li><li><span>04</span><div><h3>Agree the way forward.</h3><p>Confirm the assignment and deployment arrangements.</p></div></li></ol></section>
 
