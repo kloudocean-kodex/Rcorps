@@ -12,8 +12,8 @@ if (reviewStage) {
   function sync(index) {
     active = index;
     dots.forEach((dot, i) => i === index ? dot.setAttribute('aria-current', 'true') : dot.removeAttribute('aria-current'));
-    previous.disabled = index === 0;
-    next.disabled = index === slides.length - 1;
+    previous.disabled = rail.scrollLeft < 4;
+    next.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 4;
     position.textContent = `${String(index + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
   }
   function go(index) {
@@ -37,7 +37,7 @@ if (reviewStage) {
       sync(nearest);
     }, 120);
   }, { passive: true });
-  new ResizeObserver(() => rail.scrollTo({ left: slides[active].offsetLeft, behavior: 'instant' })).observe(rail);
+  new ResizeObserver(() => { const overflows = rail.scrollWidth > rail.clientWidth + 4; reviewStage.querySelector('.review-controls').hidden = !overflows; rail.tabIndex = overflows ? 0 : -1; rail.scrollTo({ left: slides[active].offsetLeft, behavior: 'instant' }); sync(active); }).observe(rail);
   reviewStage.classList.add('is-enhanced');
   reviewStage.querySelector('.review-controls').hidden = false;
   sync(0);

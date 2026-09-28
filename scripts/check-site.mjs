@@ -51,7 +51,7 @@ for (const full of files) {
     for (const match of css.matchAll(/url\([\s"']*([^\s)"']+)/g)) await checkAsset(match[1], relative);
   }
 }
-assert.equal(documents.size, 14, 'Expected 13 routes and custom 404');
+assert.equal(documents.size, 17, 'Expected 16 routes and custom 404');
 assert.match(await fs.readFile(path.join(root, '_headers'), 'utf8'), /X-Robots-Tag: noindex, nofollow/);
 assert.equal(failures.length, 0, failures.join('\n'));
 console.log(JSON.stringify({ htmlDocuments: documents.size, localReferences: references, brokenReferences: 0, previewIndexing: 'noindex on all', unsupportedCopyScan: 'pass' }, null, 2));

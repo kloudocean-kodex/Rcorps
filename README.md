@@ -1,8 +1,8 @@
 # R CORPS website
 
-Version 03 of the R CORPS Security Services design preview. Static HTML, CSS and JavaScript, generated with Node.js. No application dependencies, external fonts or client-side frameworks are required.
+Version 04 of the R CORPS Security Services design preview. Static HTML, CSS and JavaScript, generated with Node.js. No application dependencies, external fonts or client-side frameworks are required.
 
-Hosted preview: **https://rcorps.pages.dev/**. The GitHub-connected Cloudflare Pages project was created on 28 September 2026. The initial hosted build passed all 14 HTML-document checks and 614 local-reference checks. All 67 public resources returned HTTP 200; QA/source paths and a missing page returned the expected HTTP 404. The hosted preview retains its noindex headers and demo enquiry behaviour.
+Hosted preview: **https://rcorps.pages.dev/**, deployed through the GitHub-connected Cloudflare Pages project. Version 04 adds supplied portrait, guard, PSO and armed-personnel photography; personal-escort and escort-vehicle services; Google-style review cards; and a WhatsApp enquiry handoff. The build checks 17 HTML documents, linked routes and assets, noindex metadata, and accidental private-file publication.
 
 ## Run locally
 
@@ -36,6 +36,9 @@ Official references: [build configuration](https://developers.cloudflare.com/pag
 
 - `content/home-v3.mjs`: homepage story and markup.
 - `content/business.mjs`: business information and its evidence status.
+- `content/personnel.mjs`: role-specific photography and the labelled escort-vehicle concept.
+- `content/whatsapp.mjs`: shared contact number, WhatsApp icon and click-to-chat links.
+- `public/site-v4.css`: portrait hero, personnel gallery, vehicle section and responsive WhatsApp controls.
 - `content/clients.json`: supplied client-logo provenance.
 - `content/reviews.mjs`: short, attributed Google review excerpts and their direct source links, checked 28 September 2026. This is a curated snapshot, not an API-fed live widget.
 - `public/reviews.css` and `public/reviews.js`: responsive review cards with manual navigation, keyboard support and native touch scrolling. Reduced-motion preferences are respected.
@@ -43,12 +46,12 @@ Official references: [build configuration](https://developers.cloudflare.com/pag
 - `public/`: selected optimized media, local fonts, CSS and JavaScript.
 - `dist/`: generated deployment output, excluded from Git.
 
-The font licences are included alongside the fonts. Personnel photographs and client marks originate in the supplied R CORPS material. The workplace illustration is AI-generated and labelled in the page. These assets are not offered under an open-source licence.
+The font licences are included alongside the fonts. Personnel photographs and client marks originate in the supplied R CORPS material. The escort-vehicle illustration is AI-generated and labelled as a concept. Reviews use short, attributed excerpts with original Google profile images, linked to their sources. They are a dated curated snapshot; no Trustindex widget or live review API is connected. These assets are not offered under an open-source licence.
 
 ## Exact release scope
 
-This is a publicly accessible **design preview**, with search indexing disabled. `noindex` is not authentication. The guided enquiry stays in the current browser page; it does not send messages or save entries on a server. It can generate a local sample download. Cloudflare processes normal HTTP requests to serve the website.
+This is a publicly accessible **design preview**, with search indexing disabled. `noindex` is not authentication. The guided enquiry stays in the current browser page until the visitor explicitly opens the prepared WhatsApp link. That click transfers the draft to WhatsApp; the visitor must tap Send in WhatsApp to send it to R CORPS at +91 91121 71015. The site does not automatically send messages or save entries on a server. The visitor can also download a local enquiry brief. Cloudflare processes normal HTTP requests to serve the website.
 
-Live lead delivery, final business/media approval, domain, production privacy policy and the separate operations/attendance/accounts portal remain pending. No production-readiness or commercial-results claim is made.
+End-to-end WhatsApp delivery confirmation, final business/media approval, domain, production privacy policy and the separate operations/attendance/accounts portal remain pending. No production-readiness or commercial-results claim is made.
 
 Private invoices, PDFs, raw media archives, financial records, audit evidence, credentials and browser QA harnesses are intentionally absent from this repository and deployment. Add only reviewed website assets to `public/`.

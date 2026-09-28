@@ -1,0 +1,70 @@
+{
+  "portrait-640.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "portrait-1200.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "team-640.webp": {
+    "width": 640,
+    "height": 853
+  },
+  "team-1200.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "escort-640.webp": {
+    "width": 640,
+    "height": 427
+  },
+  "escort-1200.webp": {
+    "width": 1200,
+    "height": 800
+  },
+  "guard-640.webp": {
+    "width": 640,
+    "height": 1138
+  },
+  "guard-1200.webp": {
+    "width": 1200,
+    "height": 2133
+  },
+  "gunman-640.webp": {
+    "width": 640,
+    "height": 840
+  },
+  "gunman-1200.webp": {
+    "width": 975,
+    "height": 1280
+  },
+  "pso-640.webp": {
+    "width": 640,
+    "height": 1115
+  },
+  "pso-1200.webp": {
+    "width": 734,
+    "height": 1279
+  },
+  "officer-640.webp": {
+    "width": 470,
+    "height": 1040
+  },
+  "officer-1200.webp": {
+    "width": 470,
+    "height": 1040
+  },
+  "vehicle-640.webp": {
+    "width": 640,
+    "height": 427
+  },
+  "vehicle-1200.webp": {
+    "width": 1200,
+    "height": 800
+  },
+  "women-640.webp": {
+    "width": 344,
+    "height": 201
+  }
+}

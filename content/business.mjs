@@ -11,6 +11,7 @@ export const business = Object.freeze({
  googleHours:'09:00–17:00 daily; holiday hours may differ',
  publicEvidenceStatus:'Phone and operating address match documents and live Google profile; delivery and office ownership not independently tested.',
  instagramEvidenceStatus:'Profile inspected; legal suffix LTD conflicts with supplied LLP documents. Global coverage claim not adopted.',
- liveContactEnabled:false,
+ whatsappHandoffEnabled:true,
+ serverEnquiriesEnabled:false,
  productionOrigin:null
 });
