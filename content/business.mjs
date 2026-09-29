@@ -3,7 +3,7 @@ export const business = Object.freeze({
  legalName:'Raviraj Corps Security Services LLP',
  phone:'+91 91121 71015',
  phoneE164:'+919112171015',
- email:'corpsservices8003@gmail.com',
+ email:'info@rcorpssecurity.com',
  office:'Office 703, Global Business Hub, Kharadi, Pune 411014',
  googleProfile:'https://share.google/xkx5k0aQ3Yg0mXRX7',
  instagram:'https://www.instagram.com/corps.security/',
