@@ -7,7 +7,7 @@ The four-page owner-supplied WEBSITE R CORPS.pdf was reviewed visually. Its reco
 - 13 detailed service categories: existing ten plus women security/lady bouncers, traffic/parking marshals within private premises, and security planning/consultancy discussions.
 - New service pages include scope, suitability, planning questions, practical examples, FAQs and service-specific WhatsApp drafts. Availability and agreed duties remain explicit.
 - Homepage description names guards, bouncers, PSOs and specialist security. WhatsApp is a visible hero action.
-- Ashish Mule's director section on home/about, using the supplied IMG_7796.PNG portrait. Original official crest remains the brand mark. No claims about the pictured office, certificate or generated-looking background were added.
+- Ashish Mule's director section on home/about, using the supplied IMG_7796.PNG portrait. The full portrait is shown without zoom/cropping on desktop and mobile, with its caption below the image. Original official crest remains the brand mark. No claims about the pictured office, certificate or generated-looking background were added.
 - Actual Drive `IMG_1136.JPG` inspected and used for consultancy context. Source: file `1kgaTfa-fubClBsiZNHqPNt1oGIlB8XZY` in the supplied Photo folder. Only resized WebP delivery variants were published, without altering the person/content.
 - Five-step enquiry → scope → quotation → deployment → ongoing reporting process.
 - Shareable two-page public service guide with the original crest, typography, all 13 categories, clickable service links and WhatsApp contact. Created from the same service catalogue; private source PDFs are not published.
