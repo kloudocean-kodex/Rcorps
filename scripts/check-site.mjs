@@ -38,6 +38,7 @@ for (const [full, html] of documents) {
     if (url.hash && documents.has(target) && !documents.get(target).includes(`id="${url.hash.slice(1)}"`)) failures.push(`${route}: missing anchor ${href}`);
   }
   if (/cropsservices|1000\+|Customer Monitoring Centres|Lorem ipsum/.test(html)) failures.push(`${route}: prohibited copy`);
+  if (html.includes('${')) failures.push(`${route}: unresolved content placeholder`);
   for (const match of html.matchAll(/srcset="([^"]+)"/g)) {
     for (const candidate of match[1].split(',')) await checkAsset(candidate.trim().split(/\s+/)[0], route);
   }
@@ -56,7 +57,7 @@ for (const full of files) {
     for (const match of css.matchAll(/url\([\s"']*([^\s)"']+)/g)) await checkAsset(match[1], relative);
   }
 }
-assert.equal(documents.size, production?16:17, 'Expected public routes and custom 404');
+assert.equal(documents.size, production?17:18, 'Expected public routes and custom 404');
 const headers=await fs.readFile(path.join(root, '_headers'), 'utf8');
 assert.match(headers, /X-Robots-Tag: noindex, nofollow/);
 if(production){
@@ -64,7 +65,7 @@ if(production){
   assert.match(headers, /https:\/\/rcorps.pages.dev\/\*\n  X-Robots-Tag: noindex/);
   assert.match(await fs.readFile(path.join(root,'robots.txt'),'utf8'), /Allow: \/\n/);
   const sitemap=await fs.readFile(path.join(root,'sitemap.xml'),'utf8');
-  assert.equal((sitemap.match(/<loc>/g)||[]).length,15);
+  assert.equal((sitemap.match(/<loc>/g)||[]).length,16);
   assert.ok(sitemap.includes(business.productionOrigin+'/services/escort-vehicle/'));
   assert.ok(!sitemap.includes('/review/'));
 }
