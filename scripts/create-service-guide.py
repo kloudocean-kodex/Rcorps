@@ -17,7 +17,7 @@ root=Path(__file__).resolve().parents[1]
 catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {services} from './content/services.mjs';console.log(JSON.stringify(services));"],cwd=root,text=True,encoding='utf-8'))
 for name,source,weight in [('Body','latin-2.woff2',400),('Bold','latin-2.woff2',700),('Editorial','editorial.woff2',400)]:
     font=TTFont(root/'public/assets/fonts'/source)
-    if 'fvar' in font:font=instantiateVariableFont(font,{'wght':weight},inplace=True)
+    if 'fvar' in font:font=instantiateVariableFont(font,{'wght':weight},inplace=True,updateFontNames=True)
     font.flavor=None
     stream=BytesIO();font.save(stream);stream.seek(0)
     pdfmetrics.registerFont(RLFont(name,stream))
