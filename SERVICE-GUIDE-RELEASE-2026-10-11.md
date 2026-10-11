@@ -27,4 +27,8 @@ Local verification in connected Edge:
 
 General role research: [NCERT/PSSCIVE Unarmed Security Guard](https://www.psscive.ac.in/storage/uploads/textbooks/pdf/english/security-guard-english-class-9.pdf) and [Personal Security Officer](https://www.psscive.ac.in/storage/uploads/textbooks/pdf/english/personal-security-officer-english-class-11.pdf). They inform the plain-language distinction between guarding, PSO and escort responsibilities; R CORPS availability is confirmed per assignment.
 
-Release verification must also check the deployed custom domain. A generated WhatsApp draft is not evidence that a visitor sent it or that Ashish received it.
+Production release: `d9d79a6`, followed by numbering correction `2b97876`, is live on https://rcorpssecurity.com/services/. The custom-domain guide and facility-support detail return HTTP 200. The deployed guide lists all ten categories with the last card numbered 10.
+
+Connected Edge verification of the deployed facility-support page and enquiry flow at 390px completed on 11 October. The service is preselected, contact/review steps work, acknowledgement is required, and the generated link targets `919112171015` with the service, location and contact brief. No message was opened in WhatsApp or sent. Screenshots are in `qa-output/facility-live-mobile-2026-10-11.jpg` and `qa-output/whatsapp-live-mobile-2026-10-11.jpg`.
+
+The browser's automated pointer initially did not scroll a distant form button into view. Keyboard activation completed the actual form flow; this was not a reproduced application validation failure. Real-phone WhatsApp send/receipt remains a delivery UAT item. A generated WhatsApp draft is not evidence that a visitor sent it or that Ashish received it.
