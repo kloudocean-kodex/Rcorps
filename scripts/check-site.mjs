@@ -51,13 +51,13 @@ async function checkAsset(reference, source) {
 }
 for (const full of files) {
   const relative = path.relative(root, full).replaceAll('\\', '/');
-  if (/(^|\/)(?:__|\.env|audit|node_modules|scripts|content)|\.(?:pdf|zip|jpg|jpeg|map)$/i.test(relative)) failures.push(`Unexpected published file: ${relative}`);
+  if (relative!=='downloads/R-CORPS-Service-Guide.pdf' && /(^|\/)(?:__|\.env|audit|node_modules|scripts|content)|\.(?:pdf|zip|jpg|jpeg|map)$/i.test(relative)) failures.push(`Unexpected published file: ${relative}`);
   if (full.endsWith('.css')) {
     const css = await fs.readFile(full, 'utf8');
     for (const match of css.matchAll(/url\([\s"']*([^\s)"']+)/g)) await checkAsset(match[1], relative);
   }
 }
-assert.equal(documents.size, production?17:18, 'Expected public routes and custom 404');
+assert.equal(documents.size, production?20:21, 'Expected public routes and custom 404');
 const headers=await fs.readFile(path.join(root, '_headers'), 'utf8');
 assert.match(headers, /X-Robots-Tag: noindex, nofollow/);
 if(production){
@@ -65,7 +65,7 @@ if(production){
   assert.match(headers, /https:\/\/rcorps.pages.dev\/\*\n  X-Robots-Tag: noindex/);
   assert.match(await fs.readFile(path.join(root,'robots.txt'),'utf8'), /Allow: \/\n/);
   const sitemap=await fs.readFile(path.join(root,'sitemap.xml'),'utf8');
-  assert.equal((sitemap.match(/<loc>/g)||[]).length,16);
+  assert.equal((sitemap.match(/<loc>/g)||[]).length,19);
   assert.ok(sitemap.includes(business.productionOrigin+'/services/escort-vehicle/'));
   assert.ok(!sitemap.includes('/review/'));
 }

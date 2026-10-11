@@ -1,3 +1,5 @@
+import {leadershipSection} from './leadership.mjs';
+import {whatsappLink} from './whatsapp.mjs';
 import { teamPicture, personnelSection, vehicleSection } from './personnel.mjs';
 import { instagramStory } from './social.mjs';
 export function createHome({picture, button, arrow, services, faqs, googleProof, clients}) {
@@ -13,8 +15,8 @@ export function createHome({picture, button, arrow, services, faqs, googleProof,
     <div class="cinema-shade"></div><div class="cinema-frame" aria-hidden="true"></div>
     <div class="shell cinema-copy"><p class="eyebrow light"><span class="red-dash"></span> R CORPS SECURITY SERVICES / PUNE</p>
       <h1>YOUR WORLD.<br><em>Our watch.</em></h1>
-      <p class="cinema-description">For the places you build.<br>The moments you celebrate.<br>The people who matter.</p>
-      <div class="cinema-actions">${button('Plan your security','/get-a-quote/')}<a class="cinema-story-link" href="#the-approach"><span class="round-arrow">↓</span> Discover our approach</a></div>
+      <p class="cinema-description">Guards, bouncers, PSOs and specialist security.<br>For workplaces, events and personal assignments.</p>
+      <div class="cinema-actions">${button('Plan your security','/get-a-quote/')}${whatsappLink('Discuss on WhatsApp','cinema-whatsapp')}</div>
     </div>
     <div class="cinema-bottom shell"><div class="scene-choices" role="group" aria-label="Choose a team photograph">
       <button type="button" data-scene="0" aria-pressed="true" aria-controls="hero-scenes"><span>01</span><span>The presence</span></button>
@@ -49,8 +51,10 @@ export function createHome({picture, button, arrow, services, faqs, googleProof,
     <figure class="journal-final">${teamPicture('team','Three R CORPS security professionals in a lobby')}<figcaption><span>03 / THE PRESENCE</span><h3>Be part of the plan.</h3></figcaption></figure>
     </div>${instagramStory()}</div></section>
 
-  <section class="planning-section shell"><div><p class="eyebrow">04 / THE NEXT CHAPTER</p><h2>From a first conversation<br><em>to a clear requirement.</em></h2><p>You don’t need to know every detail.<br>Start with the place and what matters to you.</p>${button('Start your enquiry','/get-a-quote/')}</div><ol class="planning-list"><li><span>01</span><div><h3>Tell us about your world.</h3><p>The location, service, timing and people involved.</p></div></li><li><span>02</span><div><h3>Shape the scope together.</h3><p>Personnel, posts, duties and practical expectations.</p></div></li><li><span>03</span><div><h3>See the commercial picture.</h3><p>A quotation with the service period, rates, applicable taxes and terms.</p></div></li><li><span>04</span><div><h3>Agree the way forward.</h3><p>Confirm the assignment and deployment arrangements.</p></div></li></ol></section>
+  <section class="planning-section shell"><div><p class="eyebrow">04 / THE NEXT CHAPTER</p><h2>From a first conversation<br><em>to a clear requirement.</em></h2><p>You don’t need to know every detail.<br>Start with the place and what matters to you.</p>${button('Start your enquiry','/get-a-quote/')}</div><ol class="planning-list"><li><span>01</span><div><h3>Tell us about your world.</h3><p>The location, service, timing and people involved.</p></div></li><li><span>02</span><div><h3>Shape the scope together.</h3><p>Personnel, posts, duties and practical expectations.</p></div></li><li><span>03</span><div><h3>See the commercial picture.</h3><p>A quotation with the service period, rates, applicable taxes and terms.</p></div></li><li><span>04</span><div><h3>Agree the deployment.</h3><p>Confirm personnel, timings, duties and a named coordinator.</p></div></li><li><span>05</span><div><h3>Stay connected on the ground.</h3><p>Agree supervision, reporting and how changes will be handled.</p></div></li></ol></section>
 
+  <section class="service-brochure shell"><div><p class="eyebrow">KEEP THE DETAILS CLOSE</p><h2>A service guide.<br><em>Ready to share.</em></h2><p>All 13 service categories, an outline of the process and the direct contact details in one concise guide.</p></div><a class="btn" href="/downloads/R-CORPS-Service-Guide.pdf" download>Download service guide <span>PDF · 2 pages</span></a></section>
+  ${leadershipSection()}
   ${googleProof()}
   <section class="section shell faq-section"><div><p class="eyebrow">A FEW USEFUL ANSWERS</p><h2>Before<br><em>we begin.</em></h2><p>Clear information for your first conversation.</p></div><div class="faq-list">${faqs.slice(0,5).map((f,i)=>`<details><summary><span class="faq-number">0${i+1}</span><span>${f[0]}</span><i aria-hidden="true">+</i></summary><p>${f[1]}</p></details>`).join('')}</div></section>
 
