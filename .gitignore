@@ -9,3 +9,5 @@ dist/
 *.jpeg
 audit/
 __*
+qa-output/
+artifacts-leadership-live-*.png

@@ -17,8 +17,8 @@ The four-page owner-supplied WEBSITE R CORPS.pdf was reviewed visually. Its reco
 
 Build: 20 HTML documents, 19 sitemap URLs, 1,139 checked local references, zero broken references, correct public-domain canonical/index policy. Both service-guide PDF pages were visually inspected. Local 390px leadership layout has no horizontal overflow.
 
-## Remaining evidence
+## Live verification
 
-Need post-deployment browser checks of the new routes, leadership transition, service-guide download and WhatsApp prepared-message contents. Native WhatsApp delivery requires the visitor to tap Send. Do not describe opening a draft as receipt of an enquiry.
+Live services list shows all 13 paths; all three added routes return HTTP 200. Consultancy detail and the full uncropped leadership portrait were inspected in the live browser at 390px and desktop. The live public service guide matches the local PDF hash and both pages were visually inspected. The live enquiry form was completed with fictional data through its prepared-message step: all filled fields appear in the WhatsApp draft to +91 91121 71015. Nothing was sent. Native WhatsApp delivery requires the visitor to tap Send; an actual phone/app and recipient-confirmed delivery check remains pending. Do not describe opening a draft as receipt of an enquiry.
 
 The older supplied Drive root did not return a readable file inventory in this session; only the separate Photo-folder inventory and the downloaded/inspected file above are confirmed. Women-personnel/traffic-specific original photographs can improve those pages when supplied; current contextual R CORPS photographs do not assert a particular staffing deployment.
